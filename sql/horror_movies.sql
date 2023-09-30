@@ -7,6 +7,6 @@ SELECT movies.id as Movie_ID,
         movies.imdb_rating as Rating
         -- movies.genre as Genre 
     FROM movies 
-    WHERE genre='horror' 
+    WHERE year <= 1985 AND genre='horror' 
     ORDER BY movies.imdb_rating DESC 
     LIMIT 3;
